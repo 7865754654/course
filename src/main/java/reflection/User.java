@@ -2,14 +2,37 @@ package reflection;
 
 import java.time.LocalDate;
 
-public class User extends Person implements Comparable{
-    private String login;
-    private LocalDate lastLoginDate;
-    private boolean isActive;
-    private String psw = "secret";
+public class User {
+    protected String fullName;
+    protected int age;
+    protected String login;
+    protected LocalDate lastLoginDate;
+    protected boolean isActive;
+    protected String psw = "secret";
 
-    public User(String name, int age) {
-        super(name, age);
+    public User(String fullName, int age, String login, LocalDate lastLoginDate, boolean isActive, String psw) {
+        this.fullName = fullName;
+        this.age = age;
+        this.login = login;
+        this.lastLoginDate = lastLoginDate;
+        this.isActive = isActive;
+        this.psw = psw;
+    }
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 
     @Deprecated(forRemoval=true, since="2.0")
@@ -50,7 +73,14 @@ public class User extends Person implements Comparable{
     }
 
     @Override
-    public int compareTo(Object o) {
-        return 0;
+    public String toString() {
+        return "User{" +
+                "fullName='" + fullName + '\'' +
+                ", age=" + age +
+                ", login='" + login + '\'' +
+                ", lastLoginDate=" + lastLoginDate +
+                ", isActive=" + isActive +
+                ", psw='" + psw + '\'' +
+                '}';
     }
 }
