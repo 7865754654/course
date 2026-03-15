@@ -1,0 +1,12 @@
+package reflection;
+
+public enum Specialization {
+    INFORMATION_TECHNOLOGY,
+    SOFTWARE_ENGINEERING,
+    CYBERSECURITY,
+    SYSTEM_ADMINISTRATION,
+    MACHINE_LEARNING,
+    BUSINESS_ANALYSIS,
+    ECONOMICS,
+    MEDICINE;
+}

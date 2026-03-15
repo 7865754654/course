@@ -8,7 +8,7 @@ public class User {
     protected String login;
     protected LocalDate lastLoginDate;
     protected boolean isActive;
-    protected String psw = "secret";
+    protected String psw = "secret1";
 
     public User(String fullName, int age, String login, LocalDate lastLoginDate, boolean isActive, String psw) {
         this.fullName = fullName;
