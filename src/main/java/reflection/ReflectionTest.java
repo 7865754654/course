@@ -10,6 +10,7 @@ public class ReflectionTest {
     public static void main(String[] args) throws NoSuchFieldException, IllegalAccessException, NoSuchMethodException, InvocationTargetException {
         System.out.println("Проверка гит пул");
         System.out.println("I'm so sad:(((((((");
+        System.out.println("I'm so happy!!!");
         User user = new User("Lavanda", 22);
         Class<User> userClass = User.class;
         System.out.println(userClass.getSuperclass());
